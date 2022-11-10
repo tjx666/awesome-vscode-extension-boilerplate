@@ -4,7 +4,7 @@ import { runTests } from '@vscode/test-electron';
 (async function go() {
     const projectPath = resolve(__dirname, '../../');
     const extensionDevelopmentPath = projectPath;
-    const extensionTestsPath = resolve(projectPath, './dist/test');
+    const extensionTestsPath = resolve(projectPath, './out/test');
     const testWorkspace = resolve(projectPath, './test-workspace');
 
     try {
