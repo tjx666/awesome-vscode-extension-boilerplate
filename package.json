@@ -23,14 +23,15 @@
         ]
     },
     "scripts": {
-        "vscode:prepublish": "pnpm run esbuild:base --minify",
+        "vscode:prepublish": "pnpm esbuild:base --minify",
         "clear": "rimraf ./out",
         "esbuild:base": "esbuild ./src/extension.ts --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
-        "esbuild:watch": "pnpm run esbuild:base --sourcemap --watch",
+        "esbuild:watch": "pnpm esbuild:base --sourcemap --watch",
         "compile:test": "pnpm clear && tsc -p ./test/tsconfig.json",
-        "watch": "tsc -watch -p ./",
         "lint": "eslint src --ext ts",
-        "test": "pnpm compile:test && node ./out/test/runTests.js"
+        "test": "pnpm compile:test && node ./out/test/runTests.js",
+        "package": "vsce package --no-dependencies",
+        "publish": "vsce publish --no-dependencies"
     },
     "devDependencies": {
         "@types/glob": "^8.0.0",
@@ -40,14 +41,14 @@
         "@typescript-eslint/eslint-plugin": "^5.42.1",
         "@typescript-eslint/parser": "^5.42.1",
         "@vscode/test-electron": "^2.2.0",
-        "esbuild": "^0.15.12",
+        "esbuild": "^0.15.13",
         "eslint": "^8.27.0",
         "format-imports": "^3.1.2",
         "glob": "^8.0.3",
         "mocha": "^10.1.0",
         "prettier": "^2.7.1",
         "rimraf": "^3.0.2",
-        "tsx": "^3.11.0",
-        "typescript": "^4.8.4"
+        "typescript": "^4.8.4",
+        "vsce": "^2.14.0"
     }
 }
