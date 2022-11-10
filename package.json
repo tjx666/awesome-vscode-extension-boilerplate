@@ -1,19 +1,43 @@
 {
     "name": "awesome-vscode-extension-boilerplate",
     "displayName": "Awesome VSCode Extension Boilerplate",
-    "description": "An awesome vscode extension boilerplate",
     "version": "0.0.1",
+    "description": "An awesome vscode extension boilerplate",
+    "preview": true,
     "publisher": "YuTengjing",
+    "icon": "assets/logo.png",
+    "license": "SEE LICENSE IN LICENSE",
+    "main": "./out/extension.js",
     "engines": {
         "vscode": "^1.73.0"
     },
     "categories": [
         "Other"
     ],
+    "author": {
+        "name": "YuTengjing",
+        "url": "https://github.com/tjx666",
+        "email": "ytj2713151713@gmail.com"
+    },
+    "badges": [
+        {
+            "url": "https://img.shields.io/badge/PRs-welcome-brightgreen.svg",
+            "description": "PRs Welcome",
+            "href": "https://github.com/tjx666/awesome-vscode-extension-boilerplate"
+        }
+    ],
+    "homepage": "https://github.com/tjx666/awesome-vscode-extension-boilerplate/blob/master/README.md",
+    "bugs": {
+        "url": "https://github.com/tjx666/awesome-vscode-extension-boilerplate/issues",
+        "email": "ytj2713151713@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tjx666/awesome-vscode-extension-boilerplate"
+    },
     "activationEvents": [
         "onCommand:awesome-vscode-extension-boilerplate.helloWorld"
     ],
-    "main": "./out/extension.js",
     "contributes": {
         "commands": [
             {
