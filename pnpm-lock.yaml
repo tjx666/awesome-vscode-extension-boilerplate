@@ -8,6 +8,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.42.1
   '@typescript-eslint/parser': ^5.42.1
   '@vscode/test-electron': ^2.2.0
+  esbuild: ^0.15.12
   eslint: ^8.27.0
   format-imports: ^3.1.2
   glob: ^8.0.3
@@ -25,6 +26,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.42.1_2udltptbznfmezdozpdoa2aemq
   '@typescript-eslint/parser': 5.42.1_rmayb2veg2btbq6mbmnyivgasy
   '@vscode/test-electron': 2.2.0
+  esbuild: 0.15.12
   eslint: 8.27.0
   format-imports: 3.1.2
   glob: 8.0.3
