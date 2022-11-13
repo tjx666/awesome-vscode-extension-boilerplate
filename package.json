@@ -3,21 +3,30 @@
     "displayName": "Awesome VSCode Extension Boilerplate",
     "version": "0.0.1",
     "description": "An awesome vscode extension boilerplate",
-    "preview": true,
     "publisher": "YuTengjing",
-    "icon": "assets/logo.png",
-    "license": "SEE LICENSE IN LICENSE",
-    "main": "./out/extension.js",
-    "engines": {
-        "vscode": "^1.73.0"
-    },
-    "categories": [
-        "Other"
-    ],
+    "preview": true,
     "author": {
         "name": "YuTengjing",
         "url": "https://github.com/tjx666",
         "email": "ytj2713151713@gmail.com"
+    },
+    "license": "SEE LICENSE IN LICENSE",
+    "homepage": "https://github.com/tjx666/awesome-vscode-extension-boilerplate/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tjx666/awesome-vscode-extension-boilerplate"
+    },
+    "bugs": {
+        "url": "https://github.com/tjx666/awesome-vscode-extension-boilerplate/issues",
+        "email": "ytj2713151713@gmail.com"
+    },
+    "categories": [
+        "Other"
+    ],
+    "main": "./out/extension.js",
+    "icon": "assets/logo.png",
+    "engines": {
+        "vscode": "^1.73.0"
     },
     "badges": [
         {
@@ -26,15 +35,6 @@
             "href": "https://github.com/tjx666/awesome-vscode-extension-boilerplate"
         }
     ],
-    "homepage": "https://github.com/tjx666/awesome-vscode-extension-boilerplate/blob/master/README.md",
-    "bugs": {
-        "url": "https://github.com/tjx666/awesome-vscode-extension-boilerplate/issues",
-        "email": "ytj2713151713@gmail.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/tjx666/awesome-vscode-extension-boilerplate"
-    },
     "activationEvents": [
         "onCommand:awesome-vscode-extension-boilerplate.helloWorld"
     ],
@@ -45,6 +45,9 @@
                 "title": "Hello World"
             }
         ]
+    },
+    "eslintConfig": {
+        "extends": "@yutengjing/eslint-config-typescript"
     },
     "scripts": {
         "vscode:prepublish": "pnpm esbuild:base --minify",
@@ -66,6 +69,7 @@
         "@typescript-eslint/eslint-plugin": "^5.42.1",
         "@typescript-eslint/parser": "^5.42.1",
         "@vscode/test-electron": "^2.2.0",
+        "@yutengjing/eslint-config-typescript": "^0.0.3",
         "esbuild": "^0.15.13",
         "eslint": "^8.27.0",
         "format-imports": "^3.1.2",

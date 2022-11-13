@@ -1,15 +1,15 @@
-import path from 'path';
+import path from 'node:path';
 import glob from 'glob';
 import Mocha from 'mocha';
 
-export function run(testsRoot: string, cb: (error: any, failures?: number) => void): void {
+export function run(testsRoot: string, callback: (error: any, failures?: number) => void): void {
     const mocha = new Mocha({ color: true });
 
     console.log(testsRoot);
 
-    glob('**/**.test.js', { cwd: testsRoot }, (err, files) => {
-        if (err) {
-            cb(err);
+    glob('**/**.test.js', { cwd: testsRoot }, (error, files) => {
+        if (error) {
+            callback(error);
             return;
         }
 
@@ -21,10 +21,10 @@ export function run(testsRoot: string, cb: (error: any, failures?: number) => vo
         try {
             // Run the mocha test
             mocha.run((failures) => {
-                cb(null, failures);
+                callback(null, failures);
             });
-        } catch (error) {
-            cb(error);
+        } catch (error_) {
+            callback(error_);
         }
     });
 }
