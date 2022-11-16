@@ -1,13 +1,13 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
-## [0.0.1] - 2022-11-09
+## 0.0.1 - 2022-11-17
 
 ### Added
 
 - feature1
 - feature2
 
-### Changed
+### Fixed
 
-- changed item 1
-- changed item 2
+- issue1
+- issue2
