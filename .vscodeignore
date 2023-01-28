@@ -12,3 +12,8 @@ test-workspace
 
 .gitignore
 pnpm-lock.yaml
+
+# esbuild-visualizer
+meta.json
+stats.html
+
