@@ -1,4 +1,5 @@
 import { strictEqual } from 'node:assert';
+
 import vscode from 'vscode';
 
 describe('#test sample', () => {

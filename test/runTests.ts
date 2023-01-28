@@ -1,4 +1,5 @@
 import { resolve } from 'node:path';
+
 import { runTests } from '@vscode/test-electron';
 
 (async function go() {
