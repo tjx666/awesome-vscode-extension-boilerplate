@@ -74,7 +74,7 @@
         "@typescript-eslint/eslint-plugin": "^5.49.0",
         "@typescript-eslint/parser": "^5.49.0",
         "@vscode/test-electron": "^2.2.2",
-        "@yutengjing/eslint-config-typescript": "^0.0.9",
+        "@yutengjing/eslint-config-typescript": "^0.2.1",
         "@yutengjing/prettier-config": "^0.0.1",
         "esbuild": "^0.17.5",
         "esbuild-visualizer": "^0.4.0",
