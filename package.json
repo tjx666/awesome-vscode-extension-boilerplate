@@ -30,7 +30,7 @@
     "main": "./out/extension.js",
     "icon": "assets/logo.png",
     "engines": {
-        "vscode": "^1.73.1"
+        "vscode": "^1.74.0"
     },
     "badges": [
         {
