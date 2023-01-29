@@ -78,7 +78,7 @@
         "@yutengjing/prettier-config": "^0.0.1",
         "esbuild": "^0.17.5",
         "esbuild-visualizer": "^0.4.0",
-        "eslint": "^8.32.0",
+        "eslint": "^8.33.0",
         "format-imports": "^3.2.2",
         "glob": "^8.1.0",
         "mocha": "^10.2.0",
