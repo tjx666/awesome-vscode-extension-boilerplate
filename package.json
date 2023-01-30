@@ -51,12 +51,19 @@
         ]
     },
     "eslintConfig": {
-        "extends": "@yutengjing/eslint-config-typescript"
+        "extends": "@yutengjing/eslint-config-typescript",
+        "ignorePatterns": [
+            "test-workspace"
+        ]
     },
     "prettier": "@yutengjing/prettier-config",
     "lint-staged": {
-        "*.{js,ts,json}": "eslint --fix",
-        "*.{js,ts,json,md}": "prettier --write"
+        "*.{js,ts,json,md}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "src/**/*.ts": "tsc -p src/tsconfig.json --noEmit",
+        "test/**/*.ts": "tsc -p test/tsconfig.json --noEmit"
     },
     "simple-git-hooks": {
         "pre-commit": "npx lint-staged"
