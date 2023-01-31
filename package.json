@@ -71,13 +71,14 @@
     "scripts": {
         "vscode:prepublish": "pnpm esbuild:base --minify",
         "preinstall": "npx only-allow pnpm",
+        "postinstall": "stale-dep -u",
         "clear": "rimraf ./out",
-        "esbuild:base": "esbuild ./src/extension.ts --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
+        "esbuild:base": "stale-dep && esbuild ./src/extension.ts --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
         "esbuild:watch": "pnpm esbuild:base --sourcemap --watch",
         "esbuild:analyze": "pnpm esbuild:base --minify --metafile=meta.json && esbuild-visualizer --metadata ./meta.json --open",
         "compile:test": "pnpm clear && tsc -p ./test/tsconfig.json",
         "lint": "eslint src --ext ts",
-        "test": "pnpm compile:test && node ./out/test/runTests.js",
+        "test": "stale-dep && pnpm compile:test && node ./out/test/runTests.js",
         "package": "vsce package --no-dependencies",
         "release": "bumpp -c -a \"release: v%s\" --execute \"git commit -A\" package.json  && vsce publish --no-dependencies"
     },
@@ -99,6 +100,7 @@
         "prettier": "^2.8.3",
         "rimraf": "^4.1.2",
         "simple-git-hooks": "^2.8.1",
+        "stale-dep": "^0.3.1",
         "typescript": "^4.9.5",
         "vsce": "^2.15.0"
     }
