@@ -79,7 +79,7 @@
         "lint": "eslint src --ext ts",
         "test": "pnpm compile:test && node ./out/test/runTests.js",
         "package": "vsce package --no-dependencies",
-        "release": "vsce publish --no-dependencies"
+        "release": "bumpp -c -a \"release: v%s\" --execute \"git commit -A\" package.json  && vsce publish --no-dependencies"
     },
     "devDependencies": {
         "@types/glob": "^8.0.1",
@@ -89,6 +89,7 @@
         "@vscode/test-electron": "^2.2.3",
         "@yutengjing/eslint-config-typescript": "^0.2.2",
         "@yutengjing/prettier-config": "^0.0.1",
+        "bumpp": "^8.2.1",
         "esbuild": "^0.17.5",
         "esbuild-visualizer": "^0.4.0",
         "eslint": "^8.33.0",
