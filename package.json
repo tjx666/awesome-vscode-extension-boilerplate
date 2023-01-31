@@ -79,7 +79,7 @@
         "lint": "eslint src --ext ts",
         "test": "pnpm compile:test && node ./out/test/runTests.js",
         "package": "vsce package --no-dependencies",
-        "publish": "vsce publish --no-dependencies"
+        "release": "vsce publish --no-dependencies"
     },
     "devDependencies": {
         "@types/glob": "^8.0.1",
