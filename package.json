@@ -76,7 +76,7 @@
         "esbuild:base": "stale-dep && esbuild ./src/extension.ts --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
         "esbuild:watch": "pnpm esbuild:base --sourcemap --watch",
         "esbuild:analyze": "pnpm esbuild:base --minify --metafile=meta.json && esbuild-visualizer --metadata ./meta.json --open",
-        "compile:test": "pnpm clear && tsc -p ./test/tsconfig.json",
+        "compile:test": "pnpm clear && tsc -b ./test/tsconfig.build.json",
         "lint": "eslint src --ext ts",
         "test": "stale-dep && pnpm compile:test && node ./out/test/runTests.js",
         "package": "vsce package --no-dependencies",

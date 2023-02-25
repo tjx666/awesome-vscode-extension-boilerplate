@@ -1,0 +1,9 @@
+{
+    "extends": "../tsconfig.base.json",
+    "compilerOptions": {
+        "composite": true,
+        "sourceMap": true,
+        "outDir": "../out/src"
+    },
+    "include": ["**/*.ts"]
+}
