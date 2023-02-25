@@ -39,9 +39,7 @@
             "href": "https://github.com/tjx666/awesome-vscode-extension-boilerplate"
         }
     ],
-    "activationEvents": [
-        "onCommand:awesome-vscode-extension-boilerplate.helloWorld"
-    ],
+    "activationEvents": [],
     "contributes": {
         "commands": [
             {
