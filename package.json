@@ -1,7 +1,7 @@
 {
     "name": "awesome-vscode-extension-boilerplate",
     "displayName": "Awesome VSCode Extension Boilerplate",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "description": "An awesome vscode extension boilerplate",
     "publisher": "YuTengjing",
     "preview": true,
@@ -30,7 +30,7 @@
     "main": "./out/extension.js",
     "icon": "assets/logo.png",
     "engines": {
-        "vscode": "^1.74.0"
+        "vscode": "^1.75.1"
     },
     "badges": [
         {
