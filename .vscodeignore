@@ -1,15 +1,24 @@
-.vscode
-.vscode-test
+# source
 src
-.github
+*.ts
+
+# output
+out
+!out/extension.js
+*.map
+*.vsix
+
+# test
+test
 test-workspace
+.vscode-test
 
-**/tsconfig.*
-**/.eslintrc.json
-**/.prettierrc.js
-**/*.map
-**/*.ts
-
+# configs
+.github
+.vscode
+tsconfig.*
+.eslintrc*
+.prettier*
 .gitignore
 pnpm-lock.yaml
 
