@@ -4,6 +4,7 @@
     "version": "0.0.4",
     "description": "An awesome vscode extension boilerplate",
     "publisher": "YuTengjing",
+    "private": true,
     "preview": true,
     "author": {
         "name": "YuTengjing",
@@ -86,6 +87,7 @@
         "@types/node": "^16.18.12",
         "@types/vscode": "^1.75.1",
         "@vscode/test-electron": "^2.2.3",
+        "@vscode/vsce": "^2.18.0",
         "@yutengjing/eslint-config-typescript": "^0.2.5",
         "@yutengjing/prettier-config": "^0.0.1",
         "bumpp": "^9.0.0",
@@ -99,7 +101,6 @@
         "rimraf": "^4.1.2",
         "simple-git-hooks": "^2.8.1",
         "stale-dep": "^0.6.0",
-        "typescript": "^4.9.5",
-        "vsce": "^2.15.0"
+        "typescript": "^4.9.5"
     }
 }
