@@ -79,7 +79,9 @@
         "lint": "eslint src --ext ts",
         "test": "stale-dep && pnpm compile:test && node ./out/test/runTests.js",
         "package": "vsce package --no-dependencies",
-        "release": "bumpp -c \"release: v%s\" package.json"
+        "bump": "bumpp -c \"release: v%s\" package.json",
+        "release": "pnpm bump",
+        "release:local": "pnpm bump && vsce publish --no-dependencies"
     },
     "devDependencies": {
         "@types/glob": "^8.1.0",
