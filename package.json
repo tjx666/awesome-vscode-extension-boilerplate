@@ -1,7 +1,7 @@
 {
     "name": "awesome-vscode-extension-boilerplate",
     "displayName": "Awesome VSCode Extension Boilerplate",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "An awesome vscode extension boilerplate",
     "publisher": "YuTengjing",
     "preview": true,
