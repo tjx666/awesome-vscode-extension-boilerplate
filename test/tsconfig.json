@@ -1,14 +1,12 @@
 {
     "extends": "../tsconfig.base.json",
     "compilerOptions": {
-        "composite": true,
-        "sourceMap": true,
         "outDir": "../out/test"
     },
     "include": ["**/*.ts"],
     "references": [
         {
-            "path": "../src/tsconfig.build.json"
+            "path": "../src/tsconfig.json"
         }
     ]
 }

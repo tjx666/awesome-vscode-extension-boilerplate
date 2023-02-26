@@ -1,5 +1,8 @@
 {
     "compilerOptions": {
+        "composite": true,
+        "sourceMap": true,
+
         /* Basic Options */
         "target": "ES2022",
         "module": "commonjs",
