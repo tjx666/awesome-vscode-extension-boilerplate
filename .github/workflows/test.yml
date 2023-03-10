@@ -42,7 +42,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile --no-optional
 
       - run: xvfb-run -a pnpm test
         if: runner.os == 'Linux'

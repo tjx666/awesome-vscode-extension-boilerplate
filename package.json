@@ -79,9 +79,9 @@
         "lint": "eslint src --ext ts",
         "test": "stale-dep && pnpm compile:test && node ./out/test/runTests.js",
         "package": "vsce package --no-dependencies",
-        "bump": "bumpp -c \"release: v%s\" package.json",
-        "release": "pnpm bump",
-        "release:local": "pnpm bump && vsce publish --no-dependencies"
+        "release": "bumpp -c \"release: v%s\" package.json",
+        "publish:vs-marketplace": "vsce publish --no-dependencies",
+        "publish:open-vsx": "ovsx publish --no-dependencies"
     },
     "devDependencies": {
         "@types/glob": "^8.1.0",
@@ -99,6 +99,7 @@
         "glob": "^8.1.0",
         "lint-staged": "^13.1.2",
         "mocha": "^10.2.0",
+        "ovsx": "^0.8.0",
         "prettier": "^2.8.4",
         "rimraf": "^4.1.2",
         "simple-git-hooks": "^2.8.1",
