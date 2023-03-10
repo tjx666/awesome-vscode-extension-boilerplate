@@ -60,9 +60,7 @@
         "*.{js,ts,json,md}": [
             "eslint --fix",
             "prettier --write"
-        ],
-        "src/**/*.ts": "tsc -p src/tsconfig.json --noEmit",
-        "test/**/*.ts": "tsc -p test/tsconfig.json --noEmit"
+        ]
     },
     "simple-git-hooks": {
         "pre-commit": "npx lint-staged"
