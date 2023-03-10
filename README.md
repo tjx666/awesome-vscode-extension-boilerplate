@@ -8,6 +8,12 @@
 
 </div>
 
+## Features
+
+- github actions support publish extension to both vs marketplace and open vsx
+- pnpm/eslint/prettier/ling-staged/simple-git-hooks/stale-dep
+- use esbuild to bundle extension
+
 ## My extensions
 
 - [Open in External App](https://github.com/tjx666/open-in-external-app)
