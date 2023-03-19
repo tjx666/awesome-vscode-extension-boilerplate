@@ -53,17 +53,21 @@ const options: BuildOptions = {
     ],
 };
 
-const ctx = await esbuild.context(options);
-try {
-    if (process.argv.includes('--watch')) {
-        await ctx.watch();
-    } else {
-        await ctx.rebuild();
+async function main() {
+    const ctx = await esbuild.context(options);
+    try {
+        if (process.argv.includes('--watch')) {
+            await ctx.watch();
+        } else {
+            await ctx.rebuild();
+        }
+    } catch (error) {
+        console.error(error);
+        await ctx.dispose();
+        process.exit();
     }
-} catch (error) {
-    console.error(error);
+
     await ctx.dispose();
-    process.exit();
 }
 
-await ctx.dispose();
+main();

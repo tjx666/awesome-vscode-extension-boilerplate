@@ -70,7 +70,7 @@
         "preinstall": "npx only-allow pnpm",
         "postinstall": "stale-dep -u",
         "clean": "rimraf -rf ./out",
-        "esbuild:base": "stale-dep && tsx scripts/esbuild.mts",
+        "esbuild:base": "stale-dep && tsx scripts/esbuild.ts",
         "esbuild:watch": "pnpm esbuild:base --sourcemap --watch",
         "esbuild:analyze": "pnpm esbuild:base --minify --metafile && esbuild-visualizer --metadata ./meta.json --open",
         "compile:test": "pnpm clean && tsc -b ./test/tsconfig.json",

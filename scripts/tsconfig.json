@@ -1,7 +1,4 @@
 {
     "extends": "../tsconfig.base.json",
-    "compilerOptions": {
-        "module": "ESNext"
-    },
-    "include": ["**/*.mts"]
+    "include": ["**/*.ts"]
 }
