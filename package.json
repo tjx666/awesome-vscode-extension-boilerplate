@@ -79,7 +79,8 @@
         "package": "vsce package --no-dependencies",
         "release": "bumpp -c \"release: v%s\" package.json",
         "publish:vs-marketplace": "vsce publish --no-dependencies",
-        "publish:open-vsx": "ovsx publish --no-dependencies"
+        "publish:open-vsx": "ovsx publish --no-dependencies",
+        "prepare": "simple-git-hooks"
     },
     "devDependencies": {
         "@types/glob": "^8.1.0",
