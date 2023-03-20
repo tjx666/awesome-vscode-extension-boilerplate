@@ -1,6 +1,8 @@
 # source
 src
-*.ts
+scripts
+assets
+!assets/logo.png
 
 # output
 out
