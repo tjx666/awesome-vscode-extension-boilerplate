@@ -5,6 +5,6 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "connor4312.esbuild-problem-matchers",
-        "cschleiden.vscode-github-actions"
+        "github.vscode-github-actions"
     ]
 }
