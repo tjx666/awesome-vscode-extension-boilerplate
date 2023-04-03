@@ -60,14 +60,13 @@ async function main() {
             await ctx.watch();
         } else {
             await ctx.rebuild();
+            await ctx.dispose();
         }
     } catch (error) {
         console.error(error);
         await ctx.dispose();
-        process.exit();
+        process.exit(1);
     }
-
-    await ctx.dispose();
 }
 
 main();
