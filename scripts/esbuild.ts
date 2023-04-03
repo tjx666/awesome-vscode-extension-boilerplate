@@ -3,10 +3,13 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import type { BuildOptions } from 'esbuild';
+import type { BuildContext, BuildOptions } from 'esbuild';
 import esbuild from 'esbuild';
 
+const isWatchMode = process.argv.includes('--watch');
 const options: BuildOptions = {
+    color: true,
+    logLevel: 'info',
     entryPoints: ['src/extension.ts'],
     bundle: true,
     metafile: process.argv.includes('--metafile'),
@@ -54,17 +57,21 @@ const options: BuildOptions = {
 };
 
 async function main() {
-    const ctx = await esbuild.context(options);
+    let ctx: BuildContext | undefined;
     try {
-        if (process.argv.includes('--watch')) {
+        if (isWatchMode) {
+            ctx = await esbuild.context(options);
             await ctx.watch();
         } else {
-            await ctx.rebuild();
-            await ctx.dispose();
+            const result = await esbuild.build(options);
+            if (process.argv.includes('--analyze')) {
+                const chunksTree = await esbuild.analyzeMetafile(result.metafile!, { color: true });
+                console.log(chunksTree);
+            }
         }
     } catch (error) {
         console.error(error);
-        await ctx.dispose();
+        ctx?.dispose();
         process.exit(1);
     }
 }
