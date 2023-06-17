@@ -85,17 +85,17 @@
     "devDependencies": {
         "@types/glob": "^8.1.0",
         "@types/mocha": "^10.0.1",
-        "@types/node": "^18.16.16",
-        "@types/vscode": "^1.78.1",
-        "@vscode/test-electron": "^2.3.2",
+        "@types/node": "^18.16.18",
+        "@types/vscode": "^1.79.1",
+        "@vscode/test-electron": "^2.3.3",
         "@vscode/vsce": "^2.19.0",
-        "@yutengjing/eslint-config-typescript": "^0.4.1",
+        "@yutengjing/eslint-config-typescript": "^0.4.2",
         "@yutengjing/prettier-config": "^0.0.1",
-        "bumpp": "^9.1.0",
-        "esbuild": "^0.17.19",
+        "bumpp": "^9.1.1",
+        "esbuild": "^0.18.4",
         "esbuild-visualizer": "^0.4.0",
-        "eslint": "^8.41.0",
-        "glob": "^10.2.6",
+        "eslint": "^8.43.0",
+        "glob": "^10.2.7",
         "lint-staged": "^13.2.2",
         "mocha": "^10.2.0",
         "ovsx": "^0.8.1",
@@ -104,6 +104,6 @@
         "simple-git-hooks": "^2.8.1",
         "stale-dep": "^0.6.0",
         "tsx": "^3.12.7",
-        "typescript": "^5.0.4"
+        "typescript": "^5.1.3"
     }
 }
