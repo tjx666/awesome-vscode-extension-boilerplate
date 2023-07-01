@@ -57,10 +57,8 @@
     },
     "prettier": "@yutengjing/prettier-config",
     "lint-staged": {
-        "*.{js,ts,json,md}": [
-            "eslint --fix",
-            "prettier --write"
-        ]
+        "*.{ts,json,md}": "eslint --fix",
+        "*.{ts,json,md,yaml}": "prettier --write"
     },
     "simple-git-hooks": {
         "pre-commit": "npx lint-staged"
@@ -79,8 +77,7 @@
         "package": "vsce package --no-dependencies",
         "release": "bumpp -c \"release: v%s\" package.json",
         "publish:vs-marketplace": "vsce publish --no-dependencies",
-        "publish:open-vsx": "ovsx publish --no-dependencies",
-        "prepare": "simple-git-hooks"
+        "publish:open-vsx": "ovsx publish --no-dependencies"
     },
     "devDependencies": {
         "@types/glob": "^8.1.0",
