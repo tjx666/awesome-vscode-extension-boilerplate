@@ -6,6 +6,9 @@ on:
       - 'v*'
 
 jobs:
+  call-workflow:
+    uses: ./.github/workflows/test.yml
+
   publish:
     runs-on: ubuntu-latest
     steps:
