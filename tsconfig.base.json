@@ -2,7 +2,6 @@
     "extends": "@yutengjing/tsconfig-node/tsconfig.json",
     "compilerOptions": {
         "target": "ES2022",
-        "module": "CommonJS",
-        "moduleResolution": "Bundler"
+        "module": "CommonJS"
     }
 }
