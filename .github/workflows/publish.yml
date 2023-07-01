@@ -1,6 +1,11 @@
 name: Publish Extension
 
 on:
+  workflow_run:
+    workflows: ['Test']
+    branches: [main]
+    types:
+      - completed
   push:
     tags:
       - 'v*'
