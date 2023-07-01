@@ -28,10 +28,10 @@
     "categories": [
         "Other"
     ],
-    "main": "./out/extension.js",
+    "main": "./out/src/extension.js",
     "icon": "assets/logo.png",
     "engines": {
-        "vscode": "^1.77.0"
+        "vscode": "^1.79.1"
     },
     "badges": [
         {
@@ -69,7 +69,7 @@
         "vscode:prepublish": "pnpm esbuild:base --minify",
         "preinstall": "npx only-allow pnpm",
         "postinstall": "stale-dep -u",
-        "clean": "rimraf -rf ./out",
+        "clean": "npx rimraf -rf ./out",
         "esbuild:base": "stale-dep && tsx scripts/esbuild.ts",
         "esbuild:watch": "pnpm esbuild:base --sourcemap --watch",
         "esbuild:analyze": "pnpm esbuild:base --minify --metafile --analyze && esbuild-visualizer --metadata ./meta.json --open",
@@ -85,18 +85,18 @@
     "devDependencies": {
         "@types/glob": "^8.1.0",
         "@types/mocha": "^10.0.1",
-        "@types/node": "^18.16.18",
+        "@types/node": "^18.16.19",
         "@types/vscode": "^1.79.1",
         "@vscode/test-electron": "^2.3.3",
         "@vscode/vsce": "^2.19.0",
         "@yutengjing/eslint-config-typescript": "^0.4.2",
         "@yutengjing/prettier-config": "^0.0.1",
         "bumpp": "^9.1.1",
-        "esbuild": "^0.18.4",
-        "esbuild-visualizer": "^0.4.0",
-        "eslint": "^8.43.0",
-        "glob": "^10.2.7",
-        "lint-staged": "^13.2.2",
+        "esbuild": "^0.18.11",
+        "esbuild-visualizer": "^0.4.1",
+        "eslint": "^8.44.0",
+        "glob": "^10.3.1",
+        "lint-staged": "^13.2.3",
         "mocha": "^10.2.0",
         "ovsx": "^0.8.1",
         "prettier": "^2.8.8",
@@ -104,6 +104,6 @@
         "simple-git-hooks": "^2.8.1",
         "stale-dep": "^0.6.0",
         "tsx": "^3.12.7",
-        "typescript": "^5.1.3"
+        "typescript": "^5.1.6"
     }
 }
