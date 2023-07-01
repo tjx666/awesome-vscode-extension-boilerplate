@@ -6,7 +6,7 @@ assets
 
 # output
 out
-!out/extension.js
+!out/src/extension.js
 *.map
 *.vsix
 
