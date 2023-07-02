@@ -6,9 +6,6 @@ on:
       - 'v*'
 
 jobs:
-  call-workflow:
-    uses: ./.github/workflows/test.yml
-
   publish:
     runs-on: ubuntu-latest
     steps:
@@ -43,6 +40,9 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile --no-optional
+
+      - name: Run tests
+        run: pnpm test
 
       - name: Publish to Visual Studio Marketplace
         run: pnpm run publish:vs-marketplace
