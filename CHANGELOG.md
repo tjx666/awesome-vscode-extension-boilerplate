@@ -1,5 +1,17 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v0.0.17 (2023-07-03)
+
+[compare changes](https://github.com/tjx666/awesome-vscode-extension-boilerplate/compare/v0.0.16...v0.0.17 '2023-07-03')
+
+### 🏎 Performance
+
+- Optimize test in publish ([772f823](https://github.com/tjx666/awesome-vscode-extension-boilerplate/commit/772f823))
+
+### ❤️ Contributors
+
+- Changfeng <changfeng@gaoding.com>
+
 ## v0.0.16 (2023-07-03)
 
 [compare changes](https://github.com/tjx666/awesome-vscode-extension-boilerplate/compare/v0.0.15...v0.0.16 '2023-07-03')
