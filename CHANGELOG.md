@@ -1,5 +1,21 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v0.0.18 (2023-07-03)
+
+[compare changes](https://github.com/tjx666/awesome-vscode-extension-boilerplate/compare/v0.0.17...v0.0.18 '2023-07-03')
+
+### 🚀 Features
+
+- Output some useful github url when release ([a409bdf](https://github.com/tjx666/awesome-vscode-extension-boilerplate/commit/a409bdf))
+
+### 🐞 Bug Fixes
+
+- Test failed when publish ([3fdebd0](https://github.com/tjx666/awesome-vscode-extension-boilerplate/commit/3fdebd0))
+
+### ❤️ Contributors
+
+- Changfeng <changfeng@gaoding.com>
+
 ## v0.0.17 (2023-07-03)
 
 [compare changes](https://github.com/tjx666/awesome-vscode-extension-boilerplate/compare/v0.0.16...v0.0.17 '2023-07-03')
