@@ -42,7 +42,7 @@ jobs:
         run: pnpm install --frozen-lockfile --no-optional
 
       - name: Run tests
-        run: pnpm test
+        run: xvfb-run -a pnpm test
 
       - name: Publish to Visual Studio Marketplace
         run: pnpm run publish:vs-marketplace
