@@ -92,8 +92,6 @@
         "@yutengjing/prettier-config": "^0.0.1",
         "@yutengjing/release": "^0.0.1",
         "@yutengjing/tsconfig-node": "^0.0.2",
-        "bumpp": "^9.1.1",
-        "changelogen": "^0.5.3",
         "esbuild": "^0.18.11",
         "esbuild-visualizer": "^0.4.1",
         "eslint": "^8.44.0",

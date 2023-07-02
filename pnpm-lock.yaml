@@ -35,12 +35,6 @@ devDependencies:
   '@yutengjing/tsconfig-node':
     specifier: ^0.0.2
     version: 0.0.2(@types/node@18.16.19)
-  bumpp:
-    specifier: ^9.1.1
-    version: 9.1.1
-  changelogen:
-    specifier: ^0.5.3
-    version: 0.5.3
   esbuild:
     specifier: ^0.18.11
     version: 0.18.11
