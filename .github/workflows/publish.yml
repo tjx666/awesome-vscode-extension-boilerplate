@@ -53,3 +53,8 @@ jobs:
 
       - name: Publish to Open VSX Registry
         run: pnpm run publish:open-vsx -p ${{ secrets.OPEN_VSX_TOKEN }}
+
+      - name: Github release
+        run: npx changelogithub
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
