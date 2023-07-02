@@ -30,8 +30,8 @@ devDependencies:
     specifier: ^0.0.1
     version: 0.0.1(prettier@2.8.8)
   '@yutengjing/release':
-    specifier: ^0.0.1
-    version: 0.0.1
+    specifier: ^0.0.4
+    version: 0.0.4
   '@yutengjing/tsconfig-node':
     specifier: ^0.0.2
     version: 0.0.2(@types/node@18.16.19)
@@ -1000,12 +1000,13 @@ packages:
       prettier: 2.8.8
     dev: true
 
-  /@yutengjing/release@0.0.1:
-    resolution: {integrity: sha512-8FVWSL7dKGbRgtlETmUfvm0e3rBlhRnNt7MVl5zBig93EBp3syIa8hXUuHR9J8BlGKahe0W9nm7FJutSDU60zQ==}
+  /@yutengjing/release@0.0.4:
+    resolution: {integrity: sha512-jOtssvxo0OEfTwh4sRB3YhezI41L2xFJPqpPeR7CU/1ATErfp5OPum0vg4vCwlVLwZ7IXjGDVtNqO6XNedVafg==}
     engines: {node: '>=16.14.0'}
     hasBin: true
     dependencies:
       '@clack/prompts': 0.6.3
+      boxen: 5.1.2
       bumpp: 9.1.1
       changelogen: 0.5.3
       execa: 5.1.1
@@ -1074,6 +1075,12 @@ packages:
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
       uri-js: 4.4.1
+    dev: true
+
+  /ansi-align@3.0.1:
+    resolution: {integrity: sha512-IOfwwBF5iczOjp/WeY4YxyjqAFMQoZufdQWDd19SEExbVLNXqvpzSJ/M7Za4/sCPmQ0+GRquoA7bGcINcxew6w==}
+    dependencies:
+      string-width: 4.2.3
     dev: true
 
   /ansi-colors@4.1.1:
@@ -1212,6 +1219,20 @@ packages:
 
   /boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
+    dev: true
+
+  /boxen@5.1.2:
+    resolution: {integrity: sha512-9gYgQKXx+1nP8mP7CzFyaUARhg7D3n1dF/FnErWmu9l6JvGpNUN278h0aSb+QjoiKSWG+iZ3uHrcqk0qrY9RQQ==}
+    engines: {node: '>=10'}
+    dependencies:
+      ansi-align: 3.0.1
+      camelcase: 6.3.0
+      chalk: 4.1.2
+      cli-boxes: 2.2.1
+      string-width: 4.2.3
+      type-fest: 0.20.2
+      widest-line: 3.1.0
+      wrap-ansi: 7.0.0
     dev: true
 
   /bplist-parser@0.2.0:
@@ -1489,6 +1510,11 @@ packages:
 
   /clean-stack@2.2.0:
     resolution: {integrity: sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==}
+    engines: {node: '>=6'}
+    dev: true
+
+  /cli-boxes@2.2.1:
+    resolution: {integrity: sha512-y4coMcylgSCdVinjiDBuR8PCC2bLjyGTwEmPb9NHR/QaNU6EUOXcTY/s6VjGMD6ENSEaeQYHCY0GNGS5jfMwPw==}
     engines: {node: '>=6'}
     dev: true
 
@@ -3567,7 +3593,7 @@ packages:
       acorn: 8.9.0
       pathe: 1.1.0
       pkg-types: 1.0.2
-      ufo: 1.1.1
+      ufo: 1.1.2
     dev: true
 
   /mocha@10.2.0:
@@ -4820,10 +4846,6 @@ packages:
     resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
     dev: true
 
-  /ufo@1.1.1:
-    resolution: {integrity: sha512-MvlCc4GHrmZdAllBc0iUDowff36Q9Ndw/UzqmEKyrfSzokTd9ZCy1i+IIk5hrYKkjoYVQyNbrw7/F8XJ2rEwTg==}
-    dev: true
-
   /ufo@1.1.2:
     resolution: {integrity: sha512-TrY6DsjTQQgyS3E3dBaOXf0TpPD8u9FVrVYmKVegJuFw51n/YB9XPt+U6ydzFG5ZIN7+DIjPbNmXoBj9esYhgQ==}
     dev: true
@@ -4901,6 +4923,13 @@ packages:
     hasBin: true
     dependencies:
       isexe: 2.0.0
+    dev: true
+
+  /widest-line@3.1.0:
+    resolution: {integrity: sha512-NsmoXalsWVDMGupxZ5R08ka9flZjjiLvHVAWYOKtiKM8ujtZWr9cRffak+uSE48+Ob8ObalXpwyeUiyDD6QFgg==}
+    engines: {node: '>=8'}
+    dependencies:
+      string-width: 4.2.3
     dev: true
 
   /workerpool@6.2.1:
