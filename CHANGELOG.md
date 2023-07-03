@@ -1,5 +1,18 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v0.0.24 (2023-07-03)
+
+### 🐞 Bug Fixes
+
+- Set git tag when latest commit is not tagged ([6d1a81b](https://github.com/tjx666/awesome-vscode-extension-boilerplate/commit/6d1a81b))
+- Set git tag when latest commit is not tagged ([3f07c9a](https://github.com/tjx666/awesome-vscode-extension-boilerplate/commit/3f07c9a))
+
+### ❤️ Contributors
+
+- Changfeng <changfeng@gaoding.com>
+
+[View changes on GitHub](https://github.com/tjx666/awesome-vscode-extension-boilerplate/compare/v0.0.23...v0.0.24 '2023-07-03')
+
 ## v0.0.23 (2023-07-03)
 
 ### 🐞 Bug Fixes
