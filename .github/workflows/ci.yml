@@ -62,7 +62,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: .vscode-test
-          key: ${{ runner.os }}-vscode-test-${{ hashFiles('tests/runTests.ts') }}-${{ steps.date_unix.outputs.DATE || steps.date_windows.outputs.DATE }}
+          key: ${{ runner.os }}-vscode-test-${{ hashFiles('test/runTests.ts') }}-${{ steps.date_unix.outputs.DATE || steps.date_windows.outputs.DATE }}
           restore-keys: ${{ runner.os }}-vscode-test-
 
       - run: xvfb-run -a pnpm test
