@@ -52,6 +52,9 @@ jobs:
       - name: Publish to Open VSX Registry
         run: pnpm run publish:open-vsx -p ${{ secrets.OPEN_VSX_TOKEN }}
 
+      - name: Reset changes
+        run: git reset HEAD~
+
       - name: Github release
         run: npx changelogithub
         env:
