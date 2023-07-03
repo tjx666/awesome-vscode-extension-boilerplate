@@ -1,5 +1,15 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v0.0.20 (2023-07-03)
+
+### 🐞 Bug Fixes
+
+- Changelogithub failed ([5439d2a](https://github.com/tjx666/awesome-vscode-extension-boilerplate/commit/5439d2a))
+
+### ❤️ Contributors
+
+- Changfeng <changfeng@gaoding.com>[compare changes](https://github.com/tjx666/awesome-vscode-extension-boilerplate/compare/v0.0.19...v0.0.20 '2023-07-03')
+
 ## v0.0.19 (2023-07-03)
 
 ### 🐞 Bug Fixes
