@@ -1,5 +1,21 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v0.0.28 (2023-07-04)
+
+### 🏎 Performance
+
+- Try reuse .vscode-test by cache ([949bb35](https://github.com/tjx666/awesome-vscode-extension-boilerplate/commit/949bb35))
+
+### 🐞 Bug Fixes
+
+- .vscode-test cache key ([6d6ec87](https://github.com/tjx666/awesome-vscode-extension-boilerplate/commit/6d6ec87))
+
+### ❤️ Contributors
+
+- Changfeng <changfeng@gaoding.com>
+
+[View changes on GitHub](https://github.com/tjx666/awesome-vscode-extension-boilerplate/compare/v0.0.27...v0.0.28 '2023-07-04')
+
 ## v0.0.27 (2023-07-03)
 
 ### 🐞 Bug Fixes
