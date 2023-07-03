@@ -53,7 +53,7 @@ jobs:
         run: pnpm run publish:open-vsx -p ${{ secrets.OPEN_VSX_TOKEN }}
 
       - name: Reset changes
-        run: git reset HEAD~
+        run: git checkout .
 
       - name: Github release
         run: npx changelogithub
