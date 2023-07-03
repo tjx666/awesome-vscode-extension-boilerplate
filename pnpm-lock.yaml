@@ -30,8 +30,8 @@ devDependencies:
     specifier: ^0.0.1
     version: 0.0.1(prettier@2.8.8)
   '@yutengjing/release':
-    specifier: ^0.0.4
-    version: 0.0.4
+    specifier: ^0.0.5
+    version: 0.0.5
   '@yutengjing/tsconfig-node':
     specifier: ^0.0.2
     version: 0.0.2(@types/node@18.16.19)
@@ -1000,8 +1000,8 @@ packages:
       prettier: 2.8.8
     dev: true
 
-  /@yutengjing/release@0.0.4:
-    resolution: {integrity: sha512-jOtssvxo0OEfTwh4sRB3YhezI41L2xFJPqpPeR7CU/1ATErfp5OPum0vg4vCwlVLwZ7IXjGDVtNqO6XNedVafg==}
+  /@yutengjing/release@0.0.5:
+    resolution: {integrity: sha512-cWuWdtNhNJGASI7oC81lGeT8sAXsqBvKS1+hIO9vyL/oR94haqyiVZoRWHDUzrJeYpsZyfZSR3yEJwlSxnMvQQ==}
     engines: {node: '>=16.14.0'}
     hasBin: true
     dependencies:
