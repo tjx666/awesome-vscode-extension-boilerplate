@@ -1,5 +1,17 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v0.0.23 (2023-07-03)
+
+### 🐞 Bug Fixes
+
+- Can't get tags when set-git-tag ([0e2205e](https://github.com/tjx666/awesome-vscode-extension-boilerplate/commit/0e2205e))
+
+### ❤️ Contributors
+
+- Changfeng <changfeng@gaoding.com>
+
+[View changes on GitHub](https://github.com/tjx666/awesome-vscode-extension-boilerplate/compare/v0.0.22...v0.0.23 '2023-07-03')
+
 ## v0.0.22 (2023-07-03)
 
 ### 🐞 Bug Fixes
