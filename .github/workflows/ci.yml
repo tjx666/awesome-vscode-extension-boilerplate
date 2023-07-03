@@ -60,10 +60,13 @@ jobs:
 
       - name: Cache .vscode-test
         uses: actions/cache@v3
+        env:
+          # we use date as part of key because the vscode insiders updated daily
+          CACHE_PREFIX: ${{ runner.os }}-vscode-test-${{ steps.date_unix.outputs.DATE || steps.date_windows.outputs.DATE }}
         with:
           path: .vscode-test
-          key: ${{ runner.os }}-vscode-test-${{ hashFiles('test/runTests.ts') }}-${{ steps.date_unix.outputs.DATE || steps.date_windows.outputs.DATE }}
-          restore-keys: ${{ runner.os }}-vscode-test-
+          key: ${{ env.CACHE_PREFIX }}-${{ hashFiles('test/runTests.ts') }}
+          restore-keys: ${{ env.CACHE_PREFIX }}
 
       - run: xvfb-run -a pnpm test
         if: runner.os == 'Linux'
