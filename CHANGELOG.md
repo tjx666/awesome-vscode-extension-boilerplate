@@ -1,5 +1,17 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v0.0.25 (2023-07-03)
+
+### 🐞 Bug Fixes
+
+- Github actions set-output warning ([f5d1d4f](https://github.com/tjx666/awesome-vscode-extension-boilerplate/commit/f5d1d4f))
+
+### ❤️ Contributors
+
+- Changfeng <changfeng@gaoding.com>
+
+[View changes on GitHub](https://github.com/tjx666/awesome-vscode-extension-boilerplate/compare/v0.0.24...v0.0.25 '2023-07-03')
+
 ## v0.0.24 (2023-07-03)
 
 ### 🐞 Bug Fixes
