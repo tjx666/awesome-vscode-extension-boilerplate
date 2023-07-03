@@ -1,5 +1,17 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v0.0.27 (2023-07-03)
+
+### 🐞 Bug Fixes
+
+- Github release failed ([b2e3e27](https://github.com/tjx666/awesome-vscode-extension-boilerplate/commit/b2e3e27))
+
+### ❤️ Contributors
+
+- Changfeng <changfeng@gaoding.com>
+
+[View changes on GitHub](https://github.com/tjx666/awesome-vscode-extension-boilerplate/compare/v0.0.26...v0.0.27 '2023-07-03')
+
 ## v0.0.26 (2023-07-03)
 
 ### 🏎 Performance
