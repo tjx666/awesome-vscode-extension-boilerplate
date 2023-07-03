@@ -1,5 +1,17 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v0.0.21 (2023-07-03)
+
+### 🏎 Performance
+
+- Reuse test when publish ([5023c69](https://github.com/tjx666/awesome-vscode-extension-boilerplate/commit/5023c69))
+
+### ❤️ Contributors
+
+- Changfeng <changfeng@gaoding.com>
+
+[View changes on GitHub](https://github.com/tjx666/awesome-vscode-extension-boilerplate/compare/v0.0.20...v0.0.21 '2023-07-03')
+
 ## v0.0.20 (2023-07-03)
 
 ### 🐞 Bug Fixes
