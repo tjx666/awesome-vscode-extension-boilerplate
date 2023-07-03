@@ -1,5 +1,17 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v0.0.26 (2023-07-03)
+
+### 🏎 Performance
+
+- Simplify ci jobs ([17c3106](https://github.com/tjx666/awesome-vscode-extension-boilerplate/commit/17c3106))
+
+### ❤️ Contributors
+
+- Changfeng <changfeng@gaoding.com>
+
+[View changes on GitHub](https://github.com/tjx666/awesome-vscode-extension-boilerplate/compare/v0.0.25...v0.0.26 '2023-07-03')
+
 ## v0.0.25 (2023-07-03)
 
 ### 🐞 Bug Fixes
