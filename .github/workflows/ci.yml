@@ -14,6 +14,8 @@ jobs:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
+    outputs:
+      GIT_TAG: ${{ steps.set-tag.outputs.GIT_TAG }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -52,20 +54,11 @@ jobs:
       - run: pnpm test
         if: runner.os != 'Linux'
 
-  set-git-tag:
-    runs-on: ubuntu-latest
-    outputs:
-      GIT_TAG: ${{ steps.set-tag.outputs.GIT_TAG }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Get tags
-        run: git fetch --tags origin
-
       - name: Set GIT_TAG
         id: set-tag
+        if: runner.os == 'Linux'
         run: |
+          git fetch --tags origin
           GIT_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
           if [ -n "$GIT_TAG" ] && [ "$(git rev-list -n 1 $GIT_TAG 2>/dev/null || echo "")" = "$(git rev-parse HEAD)" ]; then
             echo "GIT_TAG=${GIT_TAG}" >> $GITHUB_OUTPUT
@@ -74,8 +67,8 @@ jobs:
           fi
 
   publish:
-    needs: [set-git-tag, test]
-    if: startsWith(needs.set-git-tag.outputs.GIT_TAG, 'v')
+    needs: test
+    if: startsWith(needs.test.outputs.GIT_TAG, 'v')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -118,20 +111,7 @@ jobs:
       - name: Publish to Open VSX Registry
         run: pnpm run publish:open-vsx -p ${{ secrets.OPEN_VSX_TOKEN }}
 
-  release:
-    needs: [set-git-tag, publish]
-    if: startsWith(needs.set-git-tag.outputs.GIT_TAG, 'v')
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Set node
-        uses: actions/setup-node@v3
-        with:
-          node-version: lts/*
-
-      - run: npx changelogithub
+      - name: Github Release
+        run: npx changelogithub
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
