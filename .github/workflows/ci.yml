@@ -66,10 +66,8 @@ jobs:
       - name: Set GIT_TAG
         id: set-tag
         run: |
-          GIT_TAG=$(git describe --tags --abbrev=0)
-          LATEST_COMMIT=$(git rev-list -n 1 $GIT_TAG)
-          CURRENT_COMMIT=$(git rev-parse HEAD)
-          if [ "$LATEST_COMMIT" = "$CURRENT_COMMIT" ]; then
+          GIT_TAG=$(git describe --tags --abbrev=0 2>/dev/null)
+          if [ $? -eq 0 ] && [ "$(git rev-list -n 1 $GIT_TAG)" = "$(git rev-parse HEAD)" ]; then
             echo "::set-output name=GIT_TAG::${GIT_TAG}"
           else
             echo "::set-output name=GIT_TAG::"
