@@ -60,6 +60,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Get tags
+        run: git fetch --tags origin
+
       - name: Set GIT_TAG
         id: set-tag
         run: |
