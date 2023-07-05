@@ -37,7 +37,7 @@
         {
             "url": "https://img.shields.io/badge/PRs-welcome-brightgreen.svg",
             "description": "PRs Welcome",
-            "href": "https://github.com/tjx666/awesome-vscode-extension-boilerplate"
+            "href": "https://github.com/tjx666/awesome-vscode-extension-boilerplate/fork"
         }
     ],
     "activationEvents": [],
