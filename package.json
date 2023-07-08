@@ -8,8 +8,8 @@
     "preview": true,
     "author": {
         "name": "YuTengjing",
-        "url": "https://github.com/tjx666",
-        "email": "ytj2713151713@gmail.com"
+        "email": "ytj2713151713@gmail.com",
+        "url": "https://github.com/tjx666"
     },
     "license": "SEE LICENSE IN LICENSE",
     "homepage": "https://github.com/tjx666/awesome-vscode-extension-boilerplate/blob/master/README.md",
@@ -69,6 +69,7 @@
         "vscode:prepublish": "pnpm esbuild:base --minify",
         "preinstall": "npx only-allow pnpm",
         "postinstall": "stale-dep -u",
+        "prepare": "simple-git-hooks",
         "clean": "npx rimraf -rf ./out",
         "esbuild:base": "stale-dep && tsx scripts/esbuild.ts",
         "esbuild:watch": "pnpm esbuild:base --sourcemap --watch",
