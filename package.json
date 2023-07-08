@@ -31,7 +31,7 @@
     "main": "./out/src/extension.js",
     "icon": "assets/logo.png",
     "engines": {
-        "vscode": "^1.79.1"
+        "vscode": "^1.80.0"
     },
     "badges": [
         {
@@ -86,24 +86,24 @@
         "@types/glob": "^8.1.0",
         "@types/mocha": "^10.0.1",
         "@types/node": "^18.16.19",
-        "@types/vscode": "^1.79.1",
+        "@types/vscode": "^1.80.0",
         "@vscode/test-electron": "^2.3.3",
         "@vscode/vsce": "^2.19.0",
         "@yutengjing/eslint-config-typescript": "^0.4.2",
         "@yutengjing/prettier-config": "^0.0.1",
-        "@yutengjing/release": "^0.0.8",
-        "@yutengjing/tsconfig-node": "^0.0.2",
+        "@yutengjing/release": "^0.0.10",
+        "@yutengjing/tsconfig-node": "^0.0.3",
         "esbuild": "^0.18.11",
         "esbuild-visualizer": "^0.4.1",
         "eslint": "^8.44.0",
-        "glob": "^10.3.1",
+        "glob": "^10.3.2",
         "lint-staged": "^13.2.3",
         "mocha": "^10.2.0",
-        "ovsx": "^0.8.1",
-        "prettier": "^2.8.8",
+        "ovsx": "^0.8.2",
+        "prettier": "^3.0.0",
         "rimraf": "^5.0.1",
         "simple-git-hooks": "^2.8.1",
-        "stale-dep": "^0.6.0",
+        "stale-dep": "^0.6.2",
         "tsx": "^3.12.7",
         "typescript": "^5.1.6"
     }
