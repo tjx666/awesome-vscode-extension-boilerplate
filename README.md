@@ -11,9 +11,20 @@
 ## Features
 
 - github actions support publish extension to both vs marketplace and open vsx
-- auto generate changelog and publish github release
+- auto generate changelog and publish github release, make sure you enabled the write permission of github actions
 - pnpm/eslint/prettier/ling-staged/simple-git-hooks/stale-dep
 - use esbuild to bundle extension
+
+## Setup
+
+After fork this repository and clone it to local, run:
+
+```bash
+cd <your-extension-directory>
+npx setup-boilerplate
+```
+
+You can also just skip this step and adjust the boilerplate by yourself.
 
 ## Development
 
