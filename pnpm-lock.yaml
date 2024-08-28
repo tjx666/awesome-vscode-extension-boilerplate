@@ -35,9 +35,6 @@ importers:
       '@yutengjing/release':
         specifier: ^0.3.1
         version: 0.3.1
-      '@yutengjing/tsconfig-node':
-        specifier: ^0.0.5
-        version: 0.0.5(@types/node@20.16.2)
       esbuild:
         specifier: ~0.23.1
         version: 0.23.1
@@ -594,14 +591,6 @@ packages:
     resolution: {integrity: sha512-SfFCXv4Qbf5X8GFFwbsgAWgED2pbsZCqoAU5FxzLcSU8lnqQgW8K3ZYJLDlPGNtXcnDzdmOBv9wBEjXNQUOaGw==}
     engines: {node: '>=20.5.0'}
     hasBin: true
-
-  '@yutengjing/tsconfig-base@0.0.5':
-    resolution: {integrity: sha512-oteqCWevDJer64qr30h+gzkKwOUrqEYtIkCpSFtVXceTjuT3fuuA6mkn40oNz6992NxXHa9HdUaaH3/gY4FGvg==}
-
-  '@yutengjing/tsconfig-node@0.0.5':
-    resolution: {integrity: sha512-tfA6868x3MmMwA3DncfxmwQkdkdF2mB9dp5w/r9s2JL/S52xgHOjpnKFyVbWzIYjUi310lWlYUGkUUnFVoqv+A==}
-    peerDependencies:
-      '@types/node': ^18.16.19
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -1318,27 +1307,6 @@ packages:
       eslint-plugin-import:
         optional: true
       eslint-plugin-import-x:
-        optional: true
-
-  eslint-module-utils@2.8.0:
-    resolution: {integrity: sha512-aWajIYfsqCKRDgUfjEXNN/JlrzauMuSEy5sbd7WXbtW3EH6A6MpwEh42c7qD+MqQo9QMJ6fWLAeIJynx0g6OAw==}
-    engines: {node: '>=4'}
-    peerDependencies:
-      '@typescript-eslint/parser': '*'
-      eslint: '*'
-      eslint-import-resolver-node: '*'
-      eslint-import-resolver-typescript: '*'
-      eslint-import-resolver-webpack: '*'
-    peerDependenciesMeta:
-      '@typescript-eslint/parser':
-        optional: true
-      eslint:
-        optional: true
-      eslint-import-resolver-node:
-        optional: true
-      eslint-import-resolver-typescript:
-        optional: true
-      eslint-import-resolver-webpack:
         optional: true
 
   eslint-module-utils@2.8.2:
@@ -4022,13 +3990,6 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@yutengjing/tsconfig-base@0.0.5': {}
-
-  '@yutengjing/tsconfig-node@0.0.5(@types/node@20.16.2)':
-    dependencies:
-      '@types/node': 20.16.2
-      '@yutengjing/tsconfig-base': 0.0.5
-
   acorn-jsx@5.3.2(acorn@8.12.1):
     dependencies:
       acorn: 8.12.1
@@ -4865,7 +4826,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.8.0(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint@8.57.0):
+  eslint-module-utils@2.8.2(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint@8.57.0):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -4930,7 +4891,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint@8.57.0)
+      eslint-module-utils: 2.8.2(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint@8.57.0)
       hasown: 2.0.1
       is-core-module: 2.13.1
       is-glob: 4.0.3

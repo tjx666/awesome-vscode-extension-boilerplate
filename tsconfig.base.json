@@ -4,8 +4,8 @@
         "sourceMap": true,
 
         /* Basic Options */
-        "target": "ES2022",
-        "module": "commonjs",
+        "target": "ES2023",
+        "module": "ESNext",
 
         /* Strict Type-Checking Options */
         "strict": true,
@@ -15,7 +15,7 @@
         "noFallthroughCasesInSwitch": true,
 
         /* Module Resolution Options */
-        "moduleResolution": "node",
+        "moduleResolution": "Bundler",
         "esModuleInterop": true,
         "resolveJsonModule": true,
 
